@@ -6,7 +6,7 @@ class irisEnum:
         self.PETAL_LENGTH = 2
         self.PETAL_WIDTH = 3
         self.SPECIES = 4
-        self.values_list = [0,1,2,3]
+        self.values_list = [0,1,2,3,4]
             
     
     # Converts an int to a string as associated in the enumerator
