@@ -3,8 +3,8 @@ class Counter:
         self.__count = 0
         
     def addValue(self, val:int)->int:
-        self.count+=val
-        return self.__count
+        self.__count+=val
+        return self.totValue()
     
     def totValue(self)->int:
         return self.__count
