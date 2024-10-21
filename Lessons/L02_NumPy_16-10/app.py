@@ -119,3 +119,7 @@ print(np.ones((3, 4, 2)))
 # %%
 # you can sort 1D arrays as usual 
 # on 2+ dim you can sort each dimension
+
+
+# to multiple matrix by vector and vice versa
+# you have to use the @ operator X @ Y
