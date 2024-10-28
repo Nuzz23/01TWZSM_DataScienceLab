@@ -1,12 +1,12 @@
 import numpy as np
+from math import cos
 
 
 class KNearestNeighbors:
-    def __init__(self, k:int, distance_metric:str="euclidean")->None:
+    def __init__(self, k:int)->None:
         """_summary_
         Args:
             k (int): the number of neighbor to be evaluated
-            distance_metric (str): the distance metric to be used
             
         Raises:
             ValueError: if k is lower than 1
@@ -15,7 +15,6 @@ class KNearestNeighbors:
         if k < 1:
             raise ValueError("K should be at least equal to 1")
         self.__k=k
-        self.__distanceMetric = distance_metric
     
     
     # GETTERS
@@ -28,14 +27,6 @@ class KNearestNeighbors:
             int: returns the k value
         """
         return self.__k
-    
-    def getDistanceMetric(self)->str:
-        """_summary_
-
-        Returns:
-            str: returns the current metric
-        """
-        return self.__distanceMetric
     
     
     # SETTERS
@@ -54,17 +45,6 @@ class KNearestNeighbors:
             raise ValueError("K should be at least equal to 1")
         self.__k=k
         
-    
-    def setDistanceMetric(self, newMetric:str="euclidean")->None:
-        """_summary_
-
-        Args:
-            newMetric (str, optional): The given metric. Defaults to "euclidean".
-        """
-        
-        if newMetric:
-            self.__distanceMetric = newMetric
-    
     
     # FIT METHOD        
     
@@ -86,24 +66,82 @@ class KNearestNeighbors:
     
     
     # PREDICT METHOD
-    
-    
-    
-    
-    
-    
-    
+
+        
+    def predict(self, data: np.dtypes.Float16DType, distanceMethod:function=None)->np.dtypes.StringDType:
+        """_summary_
+
+        Tries to predict the classification of a given set of data
+
+        Args:
+            data (np.dtypes.Float16DType): The data you want to predict
+            distanceMethod (function, optional): The function to be used to compute the distance. Defaults to Euclidean distance.
+
+        Returns:
+            predicted distances (np.dtypes.StringDType): returns the predicted labels as an numpy array
+        """
+        
+        if not distanceMethod or not isinstance(distanceMethod, function):
+            distanceMethod = self.euclidean
+            
+            
+            
+        return np.dtypes.StringDType
     
     # DISTANCE METHOD
     
     
-    def euclidean():
-        pass
+    def euclidean(self, v1:np.dtypes.Float16DType, v2:np.dtypes.Float16DType)->float:
+        """_summary_
+        
+        Computes the euclidean distance between two vectors
+
+        Args:
+            v1 (np.dtypes.Float16DType): vector v1
+            v2 (np.dtypes.Float16DType): vector v2
+
+        Returns:
+            distance (float): the euclidean distance between vector v1 and vector v2
+        """
+        return sum([(v1[i]-v2[i])**2 for i in range(len(v1.shape[0]))])**0.5
+        
     
-    def cosine():
-        pass
+    def cosine(self, v1:np.dtypes.Float16DType, v2:np.dtypes.Float16DType)->float:
+        """_summary_
+        
+        Computes the cosine distance between two vectors
+
+        Args:
+            v1 (np.dtypes.Float16DType): vector v1
+            v2 (np.dtypes.Float16DType): vector v2
+
+        Returns:
+            distance (float): the cosine distance between vector v1 and vector v2
+        """
+        
+        piqi = 0
+        pi = 0
+        qi = 0
+        for i in range(v1.shape[0]):
+            piqi += v1[i]*v2[i]
+            pi += v1[i]**2
+            qi += v2[i]**2
+
+        return  1 - abs(cos(piqi/((pi*qi)**0.5)))
     
-    def manhattan():
-        pass
     
+    
+    def manhattan(self, v1:np.dtypes.Float16DType, v2:np.dtypes.Float16DType)->float:
+        """_summary_
+        
+        Computes the manhattan distance between two vectors
+
+        Args:
+            v1 (np.dtypes.Float16DType): vector v1
+            v2 (np.dtypes.Float16DType): vector v2
+
+        Returns:
+            distance (float): the manhattan distance between vector v1 and vector v2
+        """
+        return sum(abs(v1[i]-v2[i]) for i in range(v1.shape[0]))    
     
