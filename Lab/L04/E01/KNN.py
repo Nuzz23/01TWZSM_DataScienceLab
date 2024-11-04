@@ -28,7 +28,7 @@ class KNearestNeighbors:
     
     
     def getWeightSchema(self)->np.dtypes.Float16DType:
-        """_summary_
+        """
             Returns the current weight schema for knn
             if none was specified, the returned weighting schema is the 
             equally weighted one between each feature
@@ -99,7 +99,7 @@ class KNearestNeighbors:
 
         
     def predict(self, data:np.dtypes.Float16DType, distanceMethod=None)->np.dtypes.StringDType:
-        """_summary_
+        """
 
         Tries to predict the classification of a given set of data.
         if the used weight schema doesn't have enough feature to be supported
@@ -145,8 +145,7 @@ class KNearestNeighbors:
     
     
     def predictWithDistance(self, data:np.dtypes.Float16DType, distanceMethod=None)->np.dtypes.StringDType:
-        """_summary_
-
+        """
         Tries to predict the classification of a given set of data using the distance.
         if the used weight schema doesn't have enough feature to be supported
         it defaults to the equal weight weighting schema
@@ -182,16 +181,14 @@ class KNearestNeighbors:
                         [[1/distanceMethod(test, self.__data[i], self.__createDefaultSchema(data.shape[1])), self.__label[i]] 
                         for i in range(len(self.__data))], key=lambda x:x[0])[:self.__k], reversed=True
                     )))
-            .most_common(1)[0][0] 
-            for test in data], dtype=np.dtypes.StringDType)
-    
+            .most_common(1)[0][0] for test in data], dtype=np.dtypes.StringDType)
     
     
     # DISTANCE METHOD -----------------------------------------------------------
     
     
     def euclidean(self, v1:np.dtypes.Float16DType, v2:np.dtypes.Float16DType, weight:np.dtypes.Float16DType)->float:
-        """_summary_
+        """
         
         Computes the euclidean distance between two vectors
 
@@ -206,7 +203,7 @@ class KNearestNeighbors:
     
     
     def cosine(self, v1:np.dtypes.Float16DType, v2:np.dtypes.Float16DType, weight:np.dtypes.Float16DType)->float:
-        """_summary_
+        """
         
         Computes the cosine distance between two vectors
 
@@ -230,8 +227,7 @@ class KNearestNeighbors:
     
     
     def manhattan(self, v1:np.dtypes.Float16DType, v2:np.dtypes.Float16DType, weight:np.dtypes.Float16DType)->float:
-        """_summary_
-        
+        """    
         Computes the manhattan distance between two vectors
 
         Args:
