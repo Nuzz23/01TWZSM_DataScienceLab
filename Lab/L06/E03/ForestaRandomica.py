@@ -83,3 +83,22 @@ class ForestaRandomica:
         """
         return len(self.__forest)
         
+        
+    def getFeatureImportance(self, sort:bool=False)->pd.DataFrame:
+        """returns the importance of each feature
+        
+        Args:
+            sort (bool): if the dataFrame should be return sorted. Defaults to False
+
+        Returns:
+            importance (pd.DataFrame): dataFrame of features
+        """
+        val = self.__forest[0].feature_importances_
+        
+        for i in range(1,self.getTreeNumber()):
+            val = val + self.__forest[i].feature_importances_
+        
+        if not sort:
+            return pd.DataFrame(val, columns=['importance'], index=list(range(val.shape[0])))
+        
+        return pd.DataFrame(val, columns=['importance'], index=list(range(val.shape[0]))).sort_values(by='importance', ascending=False)
