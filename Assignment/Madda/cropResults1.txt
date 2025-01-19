@@ -1,0 +1,135 @@
+
+	Number of mfcc rows:  10
+
+	Crop dimension:  3
+
+	Max iterations:  300
+{'activation': 'relu', 'alpha': 5e-05, 'batch_size': 'auto', 'hidden_layer_sizes': [200, 200, 200], 'learning_rate': 'adaptive'}
+	Root mean squared error (train):  12.182870776166013
+	Root mean squared error (val):  13.98660351449768
+
+{'activation': 'relu', 'alpha': 5e-05, 'batch_size': 'auto', 'hidden_layer_sizes': [200, 200, 200, 200, 200, 200], 'learning_rate': 'adaptive'}
+	Root mean squared error (train):  9.699934895378046
+	Root mean squared error (val):  14.912023733177158
+
+
+	Max iterations:  1000
+{'activation': 'relu', 'alpha': 5e-05, 'batch_size': 'auto', 'hidden_layer_sizes': [200, 200, 200], 'learning_rate': 'adaptive'}
+	Root mean squared error (train):  6.8420002691445365
+	Root mean squared error (val):  15.707969727327399
+
+{'activation': 'relu', 'alpha': 5e-05, 'batch_size': 'auto', 'hidden_layer_sizes': [200, 200, 200, 200, 200, 200], 'learning_rate': 'adaptive'}
+	Root mean squared error (train):  3.116087019539916
+	Root mean squared error (val):  15.946502134059134
+
+
+	Crop dimension:  5
+
+	Max iterations:  300
+{'activation': 'relu', 'alpha': 5e-05, 'batch_size': 'auto', 'hidden_layer_sizes': [200, 200, 200], 'learning_rate': 'adaptive'}
+	Root mean squared error (train):  11.915333461935052
+	Root mean squared error (val):  14.221916995939258
+
+{'activation': 'relu', 'alpha': 5e-05, 'batch_size': 'auto', 'hidden_layer_sizes': [200, 200, 200, 200, 200, 200], 'learning_rate': 'adaptive'}
+	Root mean squared error (train):  10.02521209122838
+	Root mean squared error (val):  14.953048484747798
+
+
+	Max iterations:  1000
+{'activation': 'relu', 'alpha': 5e-05, 'batch_size': 'auto', 'hidden_layer_sizes': [200, 200, 200], 'learning_rate': 'adaptive'}
+	Root mean squared error (train):  6.974058117547523
+	Root mean squared error (val):  16.47982515067951
+
+{'activation': 'relu', 'alpha': 5e-05, 'batch_size': 'auto', 'hidden_layer_sizes': [200, 200, 200, 200, 200, 200], 'learning_rate': 'adaptive'}
+	Root mean squared error (train):  2.8549457188503786
+	Root mean squared error (val):  15.93015669567951
+
+
+	Crop dimension:  10
+
+	Max iterations:  300
+{'activation': 'relu', 'alpha': 5e-05, 'batch_size': 'auto', 'hidden_layer_sizes': [200, 200, 200], 'learning_rate': 'adaptive'}
+	Root mean squared error (train):  11.121219609146225
+	Root mean squared error (val):  16.0375198179108
+
+{'activation': 'relu', 'alpha': 5e-05, 'batch_size': 'auto', 'hidden_layer_sizes': [200, 200, 200, 200, 200, 200], 'learning_rate': 'adaptive'}
+	Root mean squared error (train):  5.414936347215658
+	Root mean squared error (val):  17.008691701274746
+
+
+	Max iterations:  1000
+{'activation': 'relu', 'alpha': 5e-05, 'batch_size': 'auto', 'hidden_layer_sizes': [200, 200, 200], 'learning_rate': 'adaptive'}
+	Root mean squared error (train):  4.447667944226154
+	Root mean squared error (val):  16.872117920789837
+
+{'activation': 'relu', 'alpha': 5e-05, 'batch_size': 'auto', 'hidden_layer_sizes': [200, 200, 200, 200, 200, 200], 'learning_rate': 'adaptive'}
+	Root mean squared error (train):  2.224152569171991
+	Root mean squared error (val):  16.328029446646795
+
+
+	Number of mfcc rows:  15
+
+	Crop dimension:  3
+
+	Max iterations:  300
+{'activation': 'relu', 'alpha': 5e-05, 'batch_size': 'auto', 'hidden_layer_sizes': [200, 200, 200], 'learning_rate': 'adaptive'}
+	Root mean squared error (train):  11.727625947238298
+	Root mean squared error (val):  13.634321609196117
+
+{'activation': 'relu', 'alpha': 5e-05, 'batch_size': 'auto', 'hidden_layer_sizes': [200, 200, 200, 200, 200, 200], 'learning_rate': 'adaptive'}
+	Root mean squared error (train):  10.353651845708391
+	Root mean squared error (val):  14.385145077063322
+
+
+	Max iterations:  1000
+{'activation': 'relu', 'alpha': 5e-05, 'batch_size': 'auto', 'hidden_layer_sizes': [200, 200, 200], 'learning_rate': 'adaptive'}
+	Root mean squared error (train):  8.431215449640813
+	Root mean squared error (val):  15.480844565549965
+
+{'activation': 'relu', 'alpha': 5e-05, 'batch_size': 'auto', 'hidden_layer_sizes': [200, 200, 200, 200, 200, 200], 'learning_rate': 'adaptive'}
+	Root mean squared error (train):  4.022877170607871
+	Root mean squared error (val):  16.388924481460602
+
+
+	Crop dimension:  5
+
+	Max iterations:  300
+{'activation': 'relu', 'alpha': 5e-05, 'batch_size': 'auto', 'hidden_layer_sizes': [200, 200, 200], 'learning_rate': 'adaptive'}
+	Root mean squared error (train):  10.896449940948765
+	Root mean squared error (val):  14.261424871901612
+
+{'activation': 'relu', 'alpha': 5e-05, 'batch_size': 'auto', 'hidden_layer_sizes': [200, 200, 200, 200, 200, 200], 'learning_rate': 'adaptive'}
+	Root mean squared error (train):  7.741598119783201
+	Root mean squared error (val):  15.572793218401728
+
+
+	Max iterations:  1000
+{'activation': 'relu', 'alpha': 5e-05, 'batch_size': 'auto', 'hidden_layer_sizes': [200, 200, 200], 'learning_rate': 'adaptive'}
+	Root mean squared error (train):  8.897257247840335
+	Root mean squared error (val):  15.498103717191906
+
+{'activation': 'relu', 'alpha': 5e-05, 'batch_size': 'auto', 'hidden_layer_sizes': [200, 200, 200, 200, 200, 200], 'learning_rate': 'adaptive'}
+	Root mean squared error (train):  2.8075640487147075
+	Root mean squared error (val):  15.816494158011977
+
+
+	Crop dimension:  10
+
+	Max iterations:  300
+{'activation': 'relu', 'alpha': 5e-05, 'batch_size': 'auto', 'hidden_layer_sizes': [200, 200, 200], 'learning_rate': 'adaptive'}
+	Root mean squared error (train):  9.354126857494816
+	Root mean squared error (val):  16.406228894357312
+
+{'activation': 'relu', 'alpha': 5e-05, 'batch_size': 'auto', 'hidden_layer_sizes': [200, 200, 200, 200, 200, 200], 'learning_rate': 'adaptive'}
+	Root mean squared error (train):  5.9403828644983285
+	Root mean squared error (val):  16.79905100729543
+
+
+	Max iterations:  1000
+{'activation': 'relu', 'alpha': 5e-05, 'batch_size': 'auto', 'hidden_layer_sizes': [200, 200, 200], 'learning_rate': 'adaptive'}
+	Root mean squared error (train):  4.813400665632238
+	Root mean squared error (val):  17.0044378732487
+
+{'activation': 'relu', 'alpha': 5e-05, 'batch_size': 'auto', 'hidden_layer_sizes': [200, 200, 200, 200, 200, 200], 'learning_rate': 'adaptive'}
+	Root mean squared error (train):  1.8912108236096212
+	Root mean squared error (val):  16.13845232851951
