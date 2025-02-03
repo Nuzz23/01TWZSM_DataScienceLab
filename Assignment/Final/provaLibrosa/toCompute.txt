@@ -1,0 +1,35 @@
+Feature temporali e di dinamica:
+
+Onset Rate: Velocità con cui si verificano gli attacchi.
+Tempo medio o variazioni di ritmo: Misure temporali.
+Log Energy Entropy: Analizza la distribuzione energetica del segnale.
+Envelope e modulazioni (Hilbert Transform): Per catturare variazioni lente
+
+Prosodic Features:
+
+Durata media delle sillabe o pattern ritmici (es. pause o durata delle vocali).
+Intonazione globale: Trend di pitch per frase.
+
+Altre metriche specifiche:
+
+Entropy of Pitch e Variabilità del Pitch: Analisi dell'estensione e complessità vocale.
+Teager-Kaiser Energy Operator (TKEO): Stima dell'energia istantanea del segnale.
+
+Rate of speech: Velocità con cui una persona parla.
+Pauses and articulation rate: Per identificare variazioni legate all'età o altre caratteristiche fisiologiche.
+
+compute SPL sound pressure level
+
+a, o, e, u vowels
+frequenza si abbassa con età
+trasformata di wavelet
+feed forward neural network
+
+
+Acoustic Voice Quality Index
+Cepstral Spectral Index of Dysphonia (CSID)
+Acoustic Breathiness Index (ABI)
+
+fai one hot encoding solo su inglesi
+
+try maad features 
